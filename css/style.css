@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Logo {
+    width: 80px;
+    
+}
+
+.header,
+.navigation_header {
+    display: flex;
+    background-color: #070F2B;
+    flex-direction: row;
+    align-items: center;
+    height: 4em;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.navigation_header{
+    gap: 2em;
+}
+.navigation_header a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s;
+    font-weight: bold;
+}
+
+
+body {
+    background-color: #FDFCF8;
+    font-family: 'Raleway';
+    color: #070F2B;
+
+}
+
+#txtbuscar {
+    float: left;
+    background-color: #D9D9D9;
+    padding-left:5px;
+    font-style: italic;
+    font-size:18px;
+    border: none;
+    height: 32px;
+    width: 260px;
+}
+div .cadastro a .color_cad{
+    color: #000000;
+}
+
+.serach-box{
+    background: #ffffff;
+    height: 12px;
+    border-radius: 35px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-text{
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 10px;
+}
+.header {
+    position: relative; /* Necessário para que o círculo rosa não sobreponha o header */
+    z-index: 1; /* Garante que o header fique acima do círculo rosa */
+}
+
+.cadastro {
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    background-color: #ffffff; /* Cor de fundo da div */
+    height: 15px; /* Altura da div */
+    border-radius: 35px; /* Arredondamento das bordas */
+    padding: 10px; /* Espaçamento interno */
+    display: flex; /* Usa Flexbox para alinhar os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    overflow: hidden; /* Garante que o círculo rosa não ultrapasse os limites da div */
+    z-index: 2; /* Garante que a div e seu conteúdo fiquem acima do círculo rosa */
+}
+
+.cadastro::before {
+    content: ''; /* Necessário para criar um pseudo-elemento */
+    position: absolute; /* Posiciona o pseudo-elemento em relação à div pai */
+    top: 80%; /* Centraliza verticalmente */
+    left: 80%; /* Centraliza horizontalmente */
+    width: 130%; /* Largura maior do círculo rosa para criar um efeito de fundo */
+    height: 130%; /* Altura maior do círculo rosa para criar um efeito de fundo */
+    background-color: #ffffff; /* Cor rosa do círculo */
+    border-radius: 50%; /* Faz o pseudo-elemento ser um círculo */
+    transform: translate(-50%, -50%); /* Ajusta a posição para o centro da div */
+    z-index: -1; /* Coloca o círculo rosa atrás da div e seu conteúdo */
+}
+
+.cadastro a {
+    color: black;
+    text-decoration: none; 
+}
+
+.cadastro a:hover {
+    color: black; 
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B1A55;
+    height: 25em;
+    padding: 0 8%;
+}
+.h1-Transforme{
+    font-size: 40px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-content {
+    max-width: 50%; /* Define a largura máxima da área de texto */
+}
+
+ h1, .h3-descubra {
+    color: #ffffff;
+    line-height: 1.2; /* Mantém o espaçamento entre as linhas mais compacto */
+    margin: 0 0 10px 0; /* Reduz a margem inferior */
+    padding: 0;
+    max-width: 100%; /* Garante que o texto não ultrapasse a largura definida no contêiner */
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B1A55;
+    height: 25em;
+    padding: 0 8%;
+}
+
+
+.back_experimente {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px; /* Adiciona espaço acima do botão */
+}
+
+.experimente {
+    color: #000000;
+    border-radius: 40px;
+    padding: 10px 20px; /* Reduzindo o tamanho do botão */
+    font-size: 0.9em; /* Reduzindo o tamanho do texto dentro do botão */
+    text-decoration: none;
+    font-weight: 800;
+    background-color: #ffffff; /* Mantendo o fundo branco */
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    padding: 5em; /* Adiciona algum espaço ao redor do contêiner */
+}
+
+.Ferramenta {
+    white-space: nowrap; /* Impede a quebra de linha no parágrafo */
+    overflow: hidden; /* Oculta o texto que excede a largura do contêiner */
+    text-overflow: ellipsis; /* Adiciona reticências para texto longo */
+    font-size: 20px; /* Define o tamanho da fonte */
+    max-width: 100%; /* Garante que o parágrafo não exceda a largura do contêiner */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do parágrafo */
+    text-align: center; /* Centraliza o texto no parágrafo */
+}
+
+.Ferramenta {
+    font-size: 20px;
+    max-width: 100%;
+    color: #201E43;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.Ferramenta::after {
+    content: "para suas necessidades de negócios"; /* Adiciona o texto após a quebra de linha */
+    display: block;
+    margin-top: 1px; /* Ajusta o espaço entre as linhas */
+}
+
+
+.seletor {
+    text-align: center; /* Centraliza o conteúdo dentro da div */
+}
+
+.seletor a {
+    font-weight: bold;
+    display: inline-block; /* Permite que os links fiquem lado a lado */
+    color: #ffffff;
+    border-radius: 35px;
+    padding: 15px;
+    margin: 20px; /* Adiciona espaço entre os links */
+    text-decoration: none;
+    font-weight: 800;
+    height: auto; /* Remove altura fixa para ajuste automático */
+    background-color: #1B1A55; /* Cor de fundo dos links */
+}
+
+.a-mais{
+    font-weight: bold;
+    color: #FD33A0;
+}
+
+.h3-melhore {
+    color: #F7CFCA;
+    font-size: 2em;
+    font-weight: 900;
+    
+}
+.h4-Acompanhe{
+    color: #ffffff;
+}
+
+.bloco {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    display: flex;
+    background-color: #1B1A55;
+    height: 30em;
+    padding: 0 8%;
+    border-radius: 35px;
+}
