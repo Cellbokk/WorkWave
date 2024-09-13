@@ -82,6 +82,7 @@ div .cadastro a .color_cad{
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     overflow: hidden; /* Garante que o círculo rosa não ultrapasse os limites da div */
     z-index: 2; /* Garante que a div e seu conteúdo fiquem acima do círculo rosa */
+    position: relative;
 }
 
 .cadastro::before {
@@ -218,11 +219,37 @@ h3 {
     background-color: #1B1A55; /* Cor de fundo dos links */
 }
 
-.a-mais{
-    font-weight: bold;
-    color: #FD33A0;
+.bloco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #1B1A55;
+    height: 30em;
+    padding: 0 8%;
+    border-radius: 35px;
 }
 
+.bloco h3,
+.bloco h4,
+.bloco a {
+    margin: 0;
+    margin-bottom: 10px; /* Adiciona espaçamento entre os textos */
+    text-align: left;
+}
+
+.bloco div.textos {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco img {
+    margin-left: 20px;
+    height: auto;
+    width: auto;
+    max-width: 50%;
+    max-height: 100%;
+}
 .h3-melhore {
     color: #F7CFCA;
     font-size: 2em;
@@ -231,15 +258,67 @@ h3 {
 }
 .h4-Acompanhe{
     color: #ffffff;
+    
 }
 
-.bloco {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    display: flex;
-    background-color: #1B1A55;
-    height: 30em;
-    padding: 0 8%;
-    border-radius: 35px;
+.a-mais{
+    font-weight: bold;
+    color: #FD33A0; 
 }
+
+.Funcionalidades-container {
+    position: relative;
+    width: 100%;
+}
+
+.Funcionalidades-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ajuste conforme necessário */
+    background-color: #f0f0f0; /* Cor de fundo do bloco */
+    z-index: -1; /* Coloca o fundo atrás do conteúdo */
+}
+
+.Funcionalidades {
+    position: relative; /* Garante que o conteúdo fique acima do fundo */
+    display: flex;
+    flex-direction: column; /* Organiza o h2 e os blocos verticalmente */
+    align-items: center; /* Centraliza o h2 horizontalmente */
+    width: 100%;
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.Funcionalidades h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Pequeno espaço entre o h2 e os blocos abaixo */
+}
+
+.Conteudo {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between; /* Um bloco à esquerda, um no centro e outro à direita */
+    width: 100%;
+    max-width: 1200px; /* Controla a largura máxima dos blocos */
+}
+
+.Conteudo .bloco {
+    display: flex;
+    flex-direction: column; /* Coloca o h3 acima do p */
+    align-items: center; /* Centraliza o conteúdo dentro do bloco */
+    width: 30%; /* Para manter três blocos lado a lado */
+}
+
+.Conteudo h3 {
+    margin-bottom: 5px; /* Reduz o espaço entre o h3 e o p */
+}
+
+.Conteudo p {
+    margin: 0;
+    text-align: center; /* Centraliza o parágrafo dentro do bloco */
+}
+
+
+
+
