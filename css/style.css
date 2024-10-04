@@ -228,13 +228,14 @@ h3 {
     height: 30em;
     padding: 0 8%;
     border-radius: 35px;
+    
 }
 
 .bloco h3,
 .bloco h4,
 .bloco a {
     margin: 0;
-    margin-bottom: 10px; /* Adiciona espaçamento entre os textos */
+    margin-bottom: 25px; /* Adiciona espaçamento entre os textos */
     text-align: left;
 }
 
@@ -269,16 +270,11 @@ h3 {
 .Funcionalidades-container {
     position: relative;
     width: 100%;
-}
-
-.Funcionalidades-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Ajuste conforme necessário */
-    background-color: #f0f0f0; /* Cor de fundo do bloco */
-    z-index: -1; /* Coloca o fundo atrás do conteúdo */
+    background-color: #1B1A55;
+    padding: 0 80px;
+    height: 29em;
+    display: flex;
+    margin: 80px 0 0 0 ;
 }
 
 .Funcionalidades {
@@ -287,11 +283,11 @@ h3 {
     flex-direction: column; /* Organiza o h2 e os blocos verticalmente */
     align-items: center; /* Centraliza o h2 horizontalmente */
     width: 100%;
-    padding: 20px; /* Adiciona espaçamento interno */
+    padding: 78px 0; /* Adiciona espaçamento interno */
+    color: #ffffff;
 }
 
 .Funcionalidades h2 {
-    text-align: center;
     margin-bottom: 20px; /* Pequeno espaço entre o h2 e os blocos abaixo */
 }
 
@@ -303,7 +299,11 @@ h3 {
     max-width: 1200px; /* Controla a largura máxima dos blocos */
 }
 
-.Conteudo .bloco {
+.Funcionalidades_topicos {
+    padding: 30px 0;
+}
+
+.Conteudo .Funcionalidades_topicos {
     display: flex;
     flex-direction: column; /* Coloca o h3 acima do p */
     align-items: center; /* Centraliza o conteúdo dentro do bloco */
@@ -319,6 +319,68 @@ h3 {
     text-align: center; /* Centraliza o parágrafo dentro do bloco */
 }
 
+.wrapper {
+    position: relative;
+}
 
+.shape {
+    position: absolute;
+    z-index: -1; /* Coloca as formas atrás do conteúdo */
+}
+
+/* Formas circulares */
+.shape1 {
+    width: 200px;
+    height: 200px;
+    background-color: #AEBEF5;
+    border-radius: 50%;
+    top: -60px;
+    left: -60px;
+}
+
+.shape2 {
+    width: 150px;
+    height: 150px;
+    background-color: #F9C299;
+    border-radius: 50%;
+    bottom: -50px;
+    right: -50px;
+}
+
+/* Novo quadrado */
+.shape3 {
+    width: 100px;
+    height: 100px;
+    background-color: #CDADEA;
+    top: -280px;
+    left: 1100px;
+    transform: rotate(45deg);
+}
+
+/* Novo triângulo */
+.shape4 {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid #A9F39D;
+    bottom: -40px;
+    left: 30%;
+    transform: translateX(-50%);
+    transform: rotate(20deg);
+}
+
+.bloco {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #1B1A55;
+    height: 30em;
+    padding: 0 8%;
+    border-radius: 35px;
+    z-index: 1; /* Garante que o bloco fique acima das formas */
+}
 
 
