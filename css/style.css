@@ -76,27 +76,12 @@ div .cadastro a .color_cad{
     background-color: #ffffff; /* Cor de fundo da div */
     height: 15px; /* Altura da div */
     border-radius: 35px; /* Arredondamento das bordas */
-    padding: 10px; /* Espaçamento interno */
+    padding: 12px ; /* Espaçamento interno */
     display: flex; /* Usa Flexbox para alinhar os itens */
     align-items: center; /* Alinha os itens verticalmente ao centro */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    overflow: hidden; /* Garante que o círculo rosa não ultrapasse os limites da div */
-    z-index: 2; /* Garante que a div e seu conteúdo fiquem acima do círculo rosa */
-    position: relative;
 }
 
-.cadastro::before {
-    content: ''; /* Necessário para criar um pseudo-elemento */
-    position: absolute; /* Posiciona o pseudo-elemento em relação à div pai */
-    top: 80%; /* Centraliza verticalmente */
-    left: 80%; /* Centraliza horizontalmente */
-    width: 130%; /* Largura maior do círculo rosa para criar um efeito de fundo */
-    height: 130%; /* Altura maior do círculo rosa para criar um efeito de fundo */
-    background-color: #ffffff; /* Cor rosa do círculo */
-    border-radius: 50%; /* Faz o pseudo-elemento ser um círculo */
-    transform: translate(-50%, -50%); /* Ajusta a posição para o centro da div */
-    z-index: -1; /* Coloca o círculo rosa atrás da div e seu conteúdo */
-}
 
 .cadastro a {
     color: black;
@@ -385,30 +370,220 @@ h3 {
 
 .Conversa {
     background-color: #1B1A55;
-    margin: 70px 0 0 0;
+    margin: 70px 0;
     border-radius: 40px;
-    padding: 300px 40px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-weight: bolder;
+    position: relative;
 }
 
-.Conversa {
-    color: #FFFFFF;
+.bloco-gerente, .bloco-funcionario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-gerente {
+    margin-top: 10px; /* Espaço acima da imagem do gerente */
+    margin-bottom: 5px; /* Espaço abaixo da imagem do gerente */
+    width: 220px;
+    height: 224px;
+}
+
+.img-gerente, .img-funcionario {
+    width: 220px;
+    height: 224px;
 }
 
 .Conversa_Rastreamento {
     background-color: #535C91;
     border-radius: 40px;
-    padding: 25px ;
-    display: flex;
+    padding: 800px 80px;
+    max-width: 60%;
+    color: #FFFFFF;
 }
 
-.Conversa_Explicacao{
+.Conversa_Explicacao {
     background-color: #535C91;
     border-radius: 40px;
-    padding: 25px ;
-    margin: 50px;
+    padding: 150px 10px;
+    max-width: 60%;
+    color: #FFFFFF;
 }
 
-.Conversa p {
-
+.bloco-gerente {
+    align-items: flex-start; /* Alinha o bloco do gerente à esquerda */
 }
 
+.bloco-funcionario {
+    align-items: flex-end; /* Alinha o bloco do funcionário à direita */
+    text-align: right;
+    margin-right: 20px; /* Espaço entre o balão de fala e a borda direita */
+}
+.Conversa_Rastreamento h3, .Conversa_Explicacao h3 {
+    margin: 0;
+    text-align: left;
+}
+
+.legenda-gerente, .legenda-funcionario {
+    color: #C1C1C1;
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-align: center; /* Centraliza o texto diretamente abaixo da imagem */
+}
+
+.bloco-gerente {
+    align-items: flex-start; /* Alinha o bloco do gerente à esquerda */
+    text-align: left;
+    margin-left: 20px; /* Espaço entre o balão de fala e a borda esquerda */
+    
+}
+
+.bloco-funcionario {
+    align-items: flex-end;
+    text-align: right;
+   
+}
+
+.img-gerente, .img-funcionario {
+    display: block;
+    
+}
+
+.legenda-gerente {
+    width: 220px; /* Mesma largura da imagem do gerente */
+    text-align: center; /* Garante que o texto da legenda fique no centro da imagem */
+}
+
+.legenda-funcionario {
+    width: 220px; /* Mesma largura da imagem do funcionário */
+    text-align: center; /* Garante que o texto da legenda fique no centro da imagem */
+}
+
+.Conversa_Rastreamento {
+    background-color: #535C91;
+    border-radius: 40px;
+    padding: 40px 100px;
+    max-width: 60%;
+    color: #FFFFFF;
+    margin-bottom: 10px; /* Espaço entre o balão de fala e a imagem */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-weight: lighter;
+    line-height: 24px;
+}
+
+
+.Conversa_Rastreamento br {
+    display: block; /* Faz a quebra de linha funcionar como um bloco */
+    content: ""; /* Remove qualquer conteúdo de quebra de linha */
+    margin: 0; /* Remove margens extras */
+}
+
+.oportunidade {
+    background-color: #4D0CB7;
+    border-radius: 39px;
+    padding: 2px 5px 2px 5px;
+    line-height: 10px;
+}
+
+.espiar {
+    background-color: #A4069D;
+    border-radius: 39px;
+    padding: 2px 5px 2px 5px;
+    line-height: 10px;
+}
+
+.shape5 {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid #535C91;
+    position: absolute; /* Para posicionar em relação à div pai */
+    bottom: 280px; /* Ajuste a posição vertical do triângulo */
+    left: 80%; /* Ajuste a posição horizontal do triângulo */
+    transform: translateX(-30%) rotate(35deg); /* Centraliza e rotaciona o triângulo */
+    z-index: 1;
+}
+
+.shape6 {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid #535C91;
+    position: absolute; /* Para posicionar em relação à div pai */
+    bottom: 1030px; /* Ajuste a posição vertical do triângulo */
+    left: 25%; /* Ajuste a posição horizontal do triângulo */
+    transform: translateX(-40%) rotate(90deg); /* Centraliza e rotaciona o triângulo */
+    z-index: 1;
+}
+
+.bloco-gerente, .bloco-funcionario {
+    position: relative; /* Para permitir que o triângulo fique atrás do balão de fala */
+    z-index: 1; /* Garante que o balão de fala esteja acima do triângulo */
+}
+
+.shape-circle1 {
+    width: 187px; /* Defina o tamanho do círculo */
+    height: 186px; /* O mesmo valor para largura e altura para manter a forma circular */
+    background-color: #9773B9; /* Cor do círculo */
+    border-radius: 50%; /* Faz com que o elemento se torne um círculo */
+    position: absolute; /* Para posicionar em relação à div pai */
+    bottom: 50px; /* Ajuste a posição vertical do círculo para ficar abaixo do balão */
+    left: 16%; /* Ajuste a posição horizontal do círculo */
+    transform: translateX(-50%); /* Centraliza o círculo */
+    z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
+}
+
+.shape-circle2 {
+    width: 49px; /* Defina o tamanho do círculo */
+    height: 47px; /* O mesmo valor para largura e altura para manter a forma circular */
+    background-color: #FBCF9C; /* Cor do círculo */
+    border-radius: 50%; /* Faz com que o elemento se torne um círculo */
+    position: absolute; /* Para posicionar em relação à div pai */
+    bottom: 70px; /* Ajuste a posição vertical do círculo para ficar abaixo do balão */
+    left: 35%; /* Ajuste a posição horizontal do círculo */
+    transform: translateX(-50%); /* Centraliza o círculo */
+    z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
+}
+
+.shape-circle3 {
+    width: 94px; /* Defina o tamanho do círculo */
+    height: 94px; /* O mesmo valor para largura e altura para manter a forma circular */
+    background-color: #9290C3;/* Cor do círculo */
+    border-radius: 50%; /* Faz com que o elemento se torne um círculo */
+    position: absolute; /* Para posicionar em relação à div pai */
+    bottom: 270px; /* Ajuste a posição vertical do círculo para ficar abaixo do balão */
+    left: 37%; /* Ajuste a posição horizontal do círculo */
+    transform: translateX(-50%); /* Centraliza o círculo */
+    z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
+}
+
+.shape-circle4 {
+    width: 160px; /* Defina o tamanho do círculo */
+    height: 160px; /* O mesmo valor para largura e altura para manter a forma circular */
+    background-color: #EEE1FD;/* Cor do círculo */
+    border-radius: 50%; /* Faz com que o elemento se torne um círculo */
+    position: absolute; /* Para posicionar em relação à div pai */
+    bottom: 680px; /* Ajuste a posição vertical do círculo para ficar abaixo do balão */
+    left: 85%; /* Ajuste a posição horizontal do círculo */
+    transform: translateX(-50%); /* Centraliza o círculo */
+    z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
+}
+
+.shape-circle5 {
+    width: 119px; /* Defina o tamanho do círculo */
+    height: 117px; /* O mesmo valor para largura e altura para manter a forma circular */
+    background-color: #F7CFCA;/* Cor do círculo */
+    border-radius: 50%; /* Faz com que o elemento se torne um círculo */
+    position: absolute; /* Para posicionar em relação à div pai */
+    bottom: 1000px; /* Ajuste a posição vertical do círculo para ficar abaixo do balão */
+    left: 70%; /* Ajuste a posição horizontal do círculo */
+    transform: translateX(-50%); /* Centraliza o círculo */
+    z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
+}
