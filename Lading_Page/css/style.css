@@ -406,17 +406,31 @@ h3 {
 .Conversa_Rastreamento {
     background-color: #535C91;
     border-radius: 40px;
-    padding: 800px 80px;
     max-width: 60%;
     color: #FFFFFF;
+    margin-left: 80px;
 }
 
 .Conversa_Explicacao {
     background-color: #535C91;
     border-radius: 40px;
-    padding: 150px 10px;
+    padding: 40px 20px; /* Mantém o padding para um bom espaçamento */
     max-width: 60%;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px; /* Aumenta a altura mínima do balão */
+}
+
+.Conversa_Explicacao h3:last-of-type {
+    align-self: flex-start; /* Alinha o segundo h3 à esquerda, se necessário */
+}
+
+/* Estilos para o bloco do funcionário */
+.bloco-funcionario {
+    align-items: flex-end; /* Alinha o bloco do funcionário à direita */
+    text-align: right;
 }
 
 .bloco-gerente {
@@ -508,7 +522,7 @@ h3 {
     border-right: 60px solid transparent;
     border-bottom: 100px solid #535C91;
     position: absolute; /* Para posicionar em relação à div pai */
-    bottom: 325px; /*Ajuste a posição vertical do triângulo */
+    bottom: 335px; /*Ajuste a posição vertical do triângulo */
     left: 80%; /* Ajuste a posição horizontal do triângulo */
     transform: translateX(-30%) rotate(35deg); /* Centraliza e rotaciona o triângulo */
     z-index: 1;
@@ -521,7 +535,7 @@ h3 {
     border-right: 60px solid transparent;
     border-bottom: 100px solid #535C91;
     position: absolute; /* Para posicionar em relação à div pai */
-    bottom: 1050px; /* Ajuste a posição vertical do triângulo */
+    bottom: 1030px; /* Ajuste a posição vertical do triângulo */
     left: 25%; /* Ajuste a posição horizontal do triângulo */
     transform: translateX(-40%) rotate(90deg); /* Centraliza e rotaciona o triângulo */
     z-index: 1;
@@ -569,12 +583,12 @@ h3 {
 }
 
 .shape-circle4 {
-    width: 160px; /* Defina o tamanho do círculo */
-    height: 160px; /* O mesmo valor para largura e altura para manter a forma circular */
+    width: 200px; /* Defina o tamanho do círculo */
+    height: 200px; /* O mesmo valor para largura e altura para manter a forma circular */
     background-color: #EEE1FD;/* Cor do círculo */
     border-radius: 50%; /* Faz com que o elemento se torne um círculo */
     position: absolute; /* Para posicionar em relação à div pai */
-    bottom: 680px; /* Ajuste a posição vertical do círculo para ficar abaixo do balão */
+    bottom: 660px; /* Ajuste a posição vertical do círculo para ficar abaixo do balão */
     left: 85%; /* Ajuste a posição horizontal do círculo */
     transform: translateX(-50%); /* Centraliza o círculo */
     z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
@@ -586,55 +600,73 @@ h3 {
     background-color: #F7CFCA;/* Cor do círculo */
     border-radius: 50%; /* Faz com que o elemento se torne um círculo */
     position: absolute; /* Para posicionar em relação à div pai */
-    bottom: 1000px; /* Ajuste a posição vertical do círculo para ficar abaixo do balão */
+    bottom: 950px; /* Ajuste a posição vertical do círculo para ficar abaixo do balão */
     left: 70%; /* Ajuste a posição horizontal do círculo */
     transform: translateX(-50%); /* Centraliza o círculo */
     z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
 }
 
+.shape-circle6 {
+    width: 49px; /* Defina o tamanho do círculo */
+    height: 47px; /* O mesmo valor para largura e altura para manter a forma circular */
+    background-color: #FBCF9C; /* Cor do círculo */
+    border-radius: 50%; /* Faz com que o elemento se torne um círculo */
+    position: absolute; /* Para posicionar em relação à div pai */
+    bottom: 1150px; /* Ajuste a posição vertical do círculo para ficar abaixo do balão */
+    left: 12%; /* Ajuste a posição horizontal do círculo */
+    transform: translateX(-50%); /* Centraliza o círculo */
+    z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
+}
+
+
 .avaliacao {
     background-color: #1B1A55;
     padding: 40px;
     text-align: center;
-    width: 1270px;
+    width: 1270px; /* largura total do contêiner */
 }
 
 .recomendacao {
     color: white;
     font-size: 1.5em;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+}
+
+/* Estilo para a imagem central */
+/* Estilo para o contêiner das caixas de comentário */
+.comentarios {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os comentários se movam para uma nova linha quando necessário */
+    justify-content: center; /* Centraliza os comentários */
+    gap: 20px; /* Espaçamento entre os comentários */
+    max-width: 100%; /* Garante que o contêiner não exceda a largura do pai */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separação do próximo conteúdo, se necessário */
 }
 
 /* Estilo para a imagem central */
 .imagem-central {
     display: flex;
     justify-content: center;
-    margin: 60px 140px;
+    margin: 30px 0; /* Ajuste a margem para evitar espaço excessivo */
 }
 
 .imagem-central img {
-    max-width: 150px;         /* Ajuste o tamanho conforme necessário */
-    border-radius: 54px;       /* Torna a imagem circular, remova se quiser bordas retas */
+    max-width: 150px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 54px; /* Torna a imagem circular, remova se quiser bordas retas */
     background-color: #9290C3;
-}
-
-/* Estilo para o contêiner das caixas de comentário */
-.comentarios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Espaçamento entre os comentários */
 }
 
 /* Estilos para o quadrado com cantos arredondados */
 .comentario {
-    width: 300px;
+    width: 500px; /* Reduzido para 400px */
     padding: 20px;
     background-color: #9290C3;
     border-radius: 20px;
-    text-align: left;         /* Alinha o texto à esquerda */
+    text-align: left; /* Alinha o texto à esquerda */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Adiciona um espaço inferior entre os comentários */
 }
+
 
 /* Estilos para as estrelas */
 .estrelas span {
@@ -659,9 +691,9 @@ h3 {
 }
 
 .linha-separacao {
-    border: none;                 /* Remove as bordas padrão */
-    border-top: 1px solid #ccc;  /* Define a linha como sólida */
-    margin: 10px 0;              /* Adiciona margem acima e abaixo da linha */
+    border: none; /* Remove as bordas padrão */
+    border-top: 1px solid #ccc; /* Define a linha como sólida */
+    margin: 10px 0; /* Adiciona margem acima e abaixo da linha */
 }
 
 /* Estilos gerais do footer */
