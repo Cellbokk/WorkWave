@@ -82,6 +82,11 @@ div .cadastro a .color_cad{
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
+.divider {
+    width: 1px; /* Largura da linha */
+    background-color: #cccccc; /* Cor da linha */
+    height: 40px; /* Altura completa entre os elementos */
+}
 
 .cadastro a {
     color: black;
@@ -707,10 +712,12 @@ h3 {
     flex-wrap: wrap;
     text-align: left;
     align-items: flex-start;
-    width: 1350px;
-    margin-top: 161px;
+    width: 100%; /* Ocupa toda a largura da tela */
+    max-width: 1350px; /* Limite opcional para monitores maiores */
+    margin: 0 auto; /* Centraliza o footer */
     box-sizing: border-box;
 }
+
 
 .footer-logo {
     display: flex;
@@ -782,5 +789,14 @@ h3 {
 
 .footer h3 {
     color: #F7CFCA;
+}
+
+.page-transition {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.page-transition.active {
+    opacity: 1;
 }
 
