@@ -1,15 +1,23 @@
-* {
+body {
     margin: 0;
     padding: 0;
 }
 
-.Logo {
+
+
+
+* #lading_page * {
+    margin: 0;
+    padding: 0;
+}
+
+#lading_page .Logo {
     width: 80px;
     
 }
 
-.header,
-.navigation_header {
+#lading_page .header,
+#lading_page .navigation_header {
     display: flex;
     background-color: #070F2B;
     flex-direction: row;
@@ -18,10 +26,10 @@
     justify-content: space-between;
     padding: 0 5%;
 }
-.navigation_header{
+#lading_page .navigation_header{
     gap: 2em;
 }
-.navigation_header a{
+#lading_page .navigation_header a{
     text-decoration: none;
     color: #ffffff;
     transition: 1s;
@@ -29,7 +37,7 @@
 }
 
 
-body {
+body#lading_page {
     background-color: #FDFCF8;
     font-family: 'Raleway';
     color: #070F2B;
@@ -46,11 +54,11 @@ body {
     height: 32px;
     width: 260px;
 }
-div .cadastro a .color_cad{
+#lading_page div .cadastro a .color_cad{
     color: #000000;
 }
 
-.serach-box{
+#lading_page .serach-box{
     background: #ffffff;
     height: 12px;
     border-radius: 35px;
@@ -60,18 +68,18 @@ div .cadastro a .color_cad{
     align-items: center;
 }
 
-.search-text{
+#lading_page .search-text{
     background: none;
     border: 0;
     outline: 0;
     font-size: 10px;
 }
-.header {
+#lading_page .header {
     position: relative; /* Necessário para que o círculo rosa não sobreponha o header */
     z-index: 1; /* Garante que o header fique acima do círculo rosa */
 }
 
-.cadastro {
+#lading_page .cadastro {
     position: relative; /* Necessário para o posicionamento do pseudo-elemento */
     background-color: #ffffff; /* Cor de fundo da div */
     height: 15px; /* Altura da div */
@@ -82,34 +90,34 @@ div .cadastro a .color_cad{
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
-.divider {
+#lading_page .divider {
     width: 1px; /* Largura da linha */
     background-color: #cccccc; /* Cor da linha */
     height: 40px; /* Altura completa entre os elementos */
 }
 
-.cadastro a {
+#lading_page .cadastro a {
     color: black;
     text-decoration: none; 
 }
 
-.cadastro a:hover {
+#lading_page .cadastro a:hover {
     color: black; 
 }
 
-.botao_entrar {
+#lading_page .botao_entrar {
     background-color: white;
     border-radius: 45px;
     height: 40px;
     width: 100px;
 }
 
-.botao_entrar a {
+#lading_page .botao_entrar a {
     display: flex;
     color: #000000;
     padding: 10px 30px;
 }
-.title {
+#lading_page .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,21 +125,21 @@ div .cadastro a .color_cad{
     height: 25em;
     padding: 0 8%;
 }
-.h1-Transforme{
+#lading_page .h1-Transforme{
     font-size: 40px;
 }
 
-.text-content {
+#lading_page .text-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.text-content {
+#lading_page .text-content {
     max-width: 50%; /* Define a largura máxima da área de texto */
 }
 
- h1, .h3-descubra {
+#lading_page h1, .h3-descubra {
     color: #ffffff;
     line-height: 1.2; /* Mantém o espaçamento entre as linhas mais compacto */
     margin: 0 0 10px 0; /* Reduz a margem inferior */
@@ -139,15 +147,15 @@ div .cadastro a .color_cad{
     max-width: 100%; /* Garante que o texto não ultrapasse a largura definida no contêiner */
 }
 
-h1 {
+#lading_page h1 {
     font-size: 1.8em;
 }
 
-h3 {
+#lading_page h3 {
     font-size: 1.2em;
 }
 
-.title {
+#lading_page .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,13 +165,13 @@ h3 {
 }
 
 
-.back_experimente {
+#lading_page .back_experimente {
     display: flex;
     justify-content: flex-start;
     margin-top: 40px; /* Adiciona espaço acima do botão */
 }
 
-.experimente {
+#lading_page .experimente {
     color: #000000;
     border-radius: 40px;
     padding: 10px 20px; /* Reduzindo o tamanho do botão */
@@ -172,14 +180,14 @@ h3 {
     font-weight: 800;
     background-color: #ffffff; /* Mantendo o fundo branco */
 }
-.container {
+#lading_page .container {
     display: flex;
     flex-direction: column; /* Organiza os elementos verticalmente */
     align-items: center; /* Centraliza os elementos horizontalmente */
     padding: 5em; /* Adiciona algum espaço ao redor do contêiner */
 }
 
-.Ferramenta {
+#lading_page .Ferramenta {
     white-space: nowrap; /* Impede a quebra de linha no parágrafo */
     overflow: hidden; /* Oculta o texto que excede a largura do contêiner */
     text-overflow: ellipsis; /* Adiciona reticências para texto longo */
@@ -189,7 +197,7 @@ h3 {
     text-align: center; /* Centraliza o texto no parágrafo */
 }
 
-.Ferramenta {
+#lading_page .Ferramenta {
     font-size: 20px;
     max-width: 100%;
     color: #201E43;
@@ -197,26 +205,26 @@ h3 {
     text-align: center;
 }
 
-.Ferramenta::after {
+#lading_page .Ferramenta::after {
     content: "para suas necessidades de negócios"; /* Adiciona o texto após a quebra de linha */
     display: block;
     margin-top: 1px; /* Ajusta o espaço entre as linhas */
 }
 
-.bloco img,
-.bloco h3,
-.bloco h4,
-.bloco a {
+#lading_page .bloco img,
+#lading_page .bloco h3,
+#lading_page .bloco h4,
+#lading_page .bloco a {
     transition: opacity 0.3s ease;
 }
 
 
-.seletor {
+#lading_page .seletor {
     text-align: center;
     margin-top: 20px;
 }
 
-.seletor a {
+#lading_page .seletor a {
     font-weight: bold;
     display: inline-block;
     color: #ffffff;
@@ -230,7 +238,7 @@ h3 {
 }
 
 /* Efeito de destaque ao passar o mouse */
-.seletor a:hover {
+#lading_page .seletor a:hover {
     background-color: #4D0CB7; /* Cor de fundo ao passar o mouse */
     color: #fff; /* Cor do texto ao passar o mouse */
     transform: translateY(-5px); /* Pequeno efeito de "elevação" */
@@ -238,7 +246,7 @@ h3 {
 }
 
 
-.bloco {
+#lading_page .bloco {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,43 +258,43 @@ h3 {
     
 }
 
-.bloco h3,
-.bloco h4,
-.bloco a {
+#lading_page .bloco h3,
+#lading_page .bloco h4,
+#lading_page .bloco a {
     margin: 0;
     margin-bottom: 25px; /* Adiciona espaçamento entre os textos */
     text-align: left;
 }
 
-.bloco div.textos {
+#lading_page .bloco div.textos {
     display: flex;
     flex-direction: column;
 }
 
-.bloco img {
+#lading_page .bloco img {
     margin-left: 20px;
     height: auto;
     width: auto;
     max-width: 50%;
     max-height: 100%;
 }
-.h3-melhore {
+#lading_page .h3-melhore {
     color: #F7CFCA;
     font-size: 2em;
     font-weight: 900;
     
 }
-.h4-Acompanhe{
+#lading_page .h4-Acompanhe{
     color: #ffffff;
     
 }
 
-.a-mais{
+#lading_page .a-mais{
     font-weight: bold;
     color: #FD33A0; 
 }
 
-.Funcionalidades-container {
+#lading_page .Funcionalidades-container {
     position: relative;
     width: 100%;
     background-color: #1B1A55;
@@ -296,7 +304,7 @@ h3 {
     margin: 80px 0 0 0 ;
 }
 
-.Funcionalidades {
+#lading_page .Funcionalidades {
     position: relative; /* Garante que o conteúdo fique acima do fundo */
     display: flex;
     flex-direction: column; /* Organiza o h2 e os blocos verticalmente */
@@ -306,11 +314,11 @@ h3 {
     color: #ffffff;
 }
 
-.Funcionalidades h2 {
+#lading_page .Funcionalidades h2 {
     margin-bottom: 20px; /* Pequeno espaço entre o h2 e os blocos abaixo */
 }
 
-.Conteudo {
+#lading_page .Conteudo {
     color: #ffffff;
     display: flex;
     justify-content: space-between; /* Um bloco à esquerda, um no centro e outro à direita */
@@ -318,37 +326,37 @@ h3 {
     max-width: 1200px; /* Controla a largura máxima dos blocos */
 }
 
-.Funcionalidades_topicos {
+#lading_page .Funcionalidades_topicos {
     padding: 30px 0;
 }
 
-.Conteudo .Funcionalidades_topicos {
+#lading_page .Conteudo .Funcionalidades_topicos {
     display: flex;
     flex-direction: column; /* Coloca o h3 acima do p */
     align-items: center; /* Centraliza o conteúdo dentro do bloco */
     width: 30%; /* Para manter três blocos lado a lado */
 }
 
-.Conteudo h3 {
+#lading_page .Conteudo h3 {
     margin-bottom: 5px; /* Reduz o espaço entre o h3 e o p */
 }
 
-.Conteudo p {
+#lading_page .Conteudo p {
     margin: 0;
     text-align: center; /* Centraliza o parágrafo dentro do bloco */
 }
 
-.wrapper {
+#lading_page .wrapper {
     position: relative;
 }
 
-.shape {
+#lading_page .shape {
     position: absolute;
     z-index: -1; /* Coloca as formas atrás do conteúdo */
 }
 
 /* Formas circulares */
-.shape1 {
+#lading_page .shape1 {
     width: 200px;
     height: 200px;
     background-color: #AEBEF5;
@@ -357,7 +365,7 @@ h3 {
     left: -60px;
 }
 
-.shape2 {
+#lading_page .shape2 {
     width: 150px;
     height: 150px;
     background-color: #F9C299;
@@ -367,7 +375,7 @@ h3 {
 }
 
 /* Novo quadrado */
-.shape3 {
+#lading_page .shape3 {
     width: 100px;
     height: 100px;
     background-color: #CDADEA;
@@ -377,7 +385,7 @@ h3 {
 }
 
 /* Novo triângulo */
-.shape4 {
+#lading_page .shape4 {
     width: 0;
     height: 0;
     border-left: 60px solid transparent;
@@ -389,7 +397,7 @@ h3 {
     transform: rotate(20deg);
 }
 
-.bloco {
+#lading_page .bloco {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -402,7 +410,7 @@ h3 {
     z-index: 1; /* Garante que o bloco fique acima das formas */
 }
 
-.Conversa {
+#lading_page .Conversa {
     background-color: #1B1A55;
     margin: 70px 0;
     border-radius: 40px;
@@ -415,29 +423,29 @@ h3 {
     
 }
 
-.bloco-gerente, .bloco-funcionario {
+#lading_page .bloco-gerente, .bloco-funcionario {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.img-gerente {
+#lading_page .img-gerente {
     margin-top: 10px; /* Espaço acima da imagem do gerente */
     margin-bottom: 5px; /* Espaço abaixo da imagem do gerente */
     width: 220px;
     height: 224px;
 }
-.img-funcionario{
+#lading_page .img-funcionario{
     margin-top: 20px;
 }
 
-.img-gerente, .img-funcionario {
+#lading_page .img-gerente, .img-funcionario {
     width: 220px;
     height: 224px;
 }
 
-.Conversa_Rastreamento {
+#lading_page .Conversa_Rastreamento {
     background-color: #535C91;
     border-radius: 40px;
     max-width: 60%;
@@ -445,7 +453,7 @@ h3 {
     margin-left: 80px;
 }
 
-.Conversa_Explicacao {
+#lading_page .Conversa_Explicacao {
     background-color: #535C91;
     border-radius: 40px;
     padding: 40px 20px; /* Mantém o padding para um bom espaçamento */
@@ -457,66 +465,66 @@ h3 {
     min-height: 300px; /* Aumenta a altura mínima do balão */
 }
 
-.Conversa_Explicacao h3:last-of-type {
+#lading_page .Conversa_Explicacao h3:last-of-type {
     align-self: flex-start; /* Alinha o segundo h3 à esquerda, se necessário */
 }
 
 /* Estilos para o bloco do funcionário */
-.bloco-funcionario {
+#lading_page .bloco-funcionario {
     align-items: flex-end; /* Alinha o bloco do funcionário à direita */
     text-align: right;
 }
 
-.bloco-gerente {
+#lading_page .bloco-gerente {
     align-items: flex-start; /* Alinha o bloco do gerente à esquerda */
 }
 
-.bloco-funcionario {
+#lading_page .bloco-funcionario {
     align-items: flex-end; /* Alinha o bloco do funcionário à direita */
     text-align: right;
     margin-right: 20px; /* Espaço entre o balão de fala e a borda direita */
 }
-.Conversa_Rastreamento h3, .Conversa_Explicacao h3 {
+#lading_page .Conversa_Rastreamento h3, .Conversa_Explicacao h3 {
     margin: 0;
     text-align: left;
 }
 
-.legenda-gerente, .legenda-funcionario {
+#lading_page .legenda-gerente, .legenda-funcionario {
     color: #C1C1C1;
     font-size: 0.9em;
     margin-top: 5px;
     text-align: center; /* Centraliza o texto diretamente abaixo da imagem */
 }
 
-.bloco-gerente {
+#lading_page .bloco-gerente {
     align-items: flex-start; /* Alinha o bloco do gerente à esquerda */
     text-align: left;
     margin-left: 20px; /* Espaço entre o balão de fala e a borda esquerda */
     
 }
 
-.bloco-funcionario {
+#lading_page .bloco-funcionario {
     align-items: flex-end;
     text-align: right;
    
 }
 
-.img-gerente, .img-funcionario {
+#lading_page .img-gerente, .img-funcionario {
     display: block;
     
 }
 
-.legenda-gerente {
+#lading_page .legenda-gerente {
     width: 220px; /* Mesma largura da imagem do gerente */
     text-align: center; /* Garante que o texto da legenda fique no centro da imagem */
 }
 
-.legenda-funcionario {
+#lading_page .legenda-funcionario {
     width: 220px; /* Mesma largura da imagem do funcionário */
     text-align: center; /* Garante que o texto da legenda fique no centro da imagem */
 }
 
-.Conversa_Rastreamento {
+#lading_page .Conversa_Rastreamento {
     background-color: #535C91;
     border-radius: 40px;
     padding: 40px 100px;
@@ -529,27 +537,27 @@ h3 {
 }
 
 
-.Conversa_Rastreamento br {
+#lading_page .Conversa_Rastreamento br {
     display: block; /* Faz a quebra de linha funcionar como um bloco */
     content: ""; /* Remove qualquer conteúdo de quebra de linha */
     margin: 0; /* Remove margens extras */
 }
 
-.oportunidade {
+#lading_page .oportunidade {
     background-color: #4D0CB7;
     border-radius: 39px;
     padding: 2px 5px 2px 5px;
     line-height: 10px;
 }
 
-.espiar {
+#lading_page .espiar {
     background-color: #A4069D;
     border-radius: 39px;
     padding: 2px 5px 2px 5px;
     line-height: 10px;
 }
 
-.shape5 {
+#lading_page .shape5 {
     width: 0;
     height: 0;
     border-left: 60px solid transparent;
@@ -562,7 +570,7 @@ h3 {
     z-index: 1;
 }
 
-.shape6 {
+#lading_page .shape6 {
     width: 0;
     height: 0;
     border-left: 60px solid transparent;
@@ -575,12 +583,12 @@ h3 {
     z-index: 1;
 }
 
-.bloco-gerente, .bloco-funcionario {
+#lading_page .bloco-gerente, .bloco-funcionario {
     position: relative; /* Para permitir que o triângulo fique atrás do balão de fala */
     z-index: 1; /* Garante que o balão de fala esteja acima do triângulo */
 }
 
-.shape-circle1 {
+#lading_page .shape-circle1 {
     width: 187px; /* Defina o tamanho do círculo */
     height: 186px; /* O mesmo valor para largura e altura para manter a forma circular */
     background-color: #9773B9; /* Cor do círculo */
@@ -592,7 +600,7 @@ h3 {
     z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
 }
 
-.shape-circle2 {
+#lading_page .shape-circle2 {
     width: 49px; /* Defina o tamanho do círculo */
     height: 47px; /* O mesmo valor para largura e altura para manter a forma circular */
     background-color: #FBCF9C; /* Cor do círculo */
@@ -604,7 +612,7 @@ h3 {
     z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
 }
 
-.shape-circle3 {
+#lading_page .shape-circle3 {
     width: 94px; /* Defina o tamanho do círculo */
     height: 94px; /* O mesmo valor para largura e altura para manter a forma circular */
     background-color: #9290C3;/* Cor do círculo */
@@ -616,7 +624,7 @@ h3 {
     z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
 }
 
-.shape-circle4 {
+#lading_page .shape-circle4 {
     width: 200px; /* Defina o tamanho do círculo */
     height: 200px; /* O mesmo valor para largura e altura para manter a forma circular */
     background-color: #EEE1FD;/* Cor do círculo */
@@ -628,7 +636,7 @@ h3 {
     z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
 }
 
-.shape-circle5 {
+#lading_page .shape-circle5 {
     width: 119px; /* Defina o tamanho do círculo */
     height: 117px; /* O mesmo valor para largura e altura para manter a forma circular */
     background-color: #F7CFCA;/* Cor do círculo */
@@ -640,7 +648,7 @@ h3 {
     z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
 }
 
-.shape-circle6 {
+#lading_page .shape-circle6 {
     width: 49px; /* Defina o tamanho do círculo */
     height: 47px; /* O mesmo valor para largura e altura para manter a forma circular */
     background-color: #FBCF9C; /* Cor do círculo */
@@ -652,7 +660,7 @@ h3 {
     z-index: 0; /* Garante que o círculo fique atrás dos balões de fala */
 }
 
-.avaliacao {
+#lading_page .avaliacao {
     background-color: #1B1A55;
     padding: 40px;
     text-align: center;
@@ -660,14 +668,14 @@ h3 {
     margin-left: calc(-50vw + 50%); /* Centraliza usando margem negativa */
 }
 
-.recomendacao {
+#lading_page .recomendacao {
     color: white;
     font-size: 1.5em;
     margin-bottom: 80px;
 }
 
 /* Estilo para o contêiner das caixas de comentário */
-.comentarios {
+#lading_page .comentarios {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -679,20 +687,20 @@ h3 {
 }
 
 /* Estilo para a imagem central */
-.imagem-central {
+#lading_page .imagem-central {
     display: flex;
     justify-content: center;
     margin: 30px auto;
 }
 
-.imagem-central img {
+#lading_page .imagem-central img {
     max-width: 150px;
     border-radius: 54px;
     background-color: #9290C3;
 }
 
 /* Estilos para o quadrado com cantos arredondados */
-.comentario {
+#lading_page .comentario {
     flex: 1 1 300px; /* Flexível para se ajustar ao espaço disponível */
     max-width: 500px;
     padding: 20px;
@@ -703,14 +711,14 @@ h3 {
 }
 
 /* Estilos para as estrelas */
-.estrelas span {
+#lading_page .estrelas span {
     color: #FFD700;
     font-size: 1.5em;
     margin-right: 3px;
 }
 
 /* Estilos para o texto do comentário */
-.texto-comentario {
+#lading_page .texto-comentario {
     font-size: 1em;
     color: white;
     margin-bottom: 10px;
@@ -718,13 +726,13 @@ h3 {
 }
 
 /* Estilos para o nome do autor */
-.autor {
+#lading_page .autor {
     font-size: 0.9em;
     color: #ffffff7b;
     font-style: italic;
 }
 
-.linha-separacao {
+#lading_page .linha-separacao {
     border: none;
     border-top: 1px solid #ccc;
     margin: 10px 0;
@@ -733,7 +741,7 @@ h3 {
 
 /* Estilos gerais do footer */
 /* Estilos gerais do footer */
-.footer {
+#lading_page .footer {
     background-color: #1B1A55;
     color: white;
     padding: 40px 20px;
@@ -748,74 +756,801 @@ h3 {
 }
 
 
-.footer-logo {
+#lading_page .footer-logo {
     display: flex;
     align-items: center;
     margin-right: 20px;
 }
 
-.footer-logo img {
+#lading_page .footer-logo img {
     max-width: 100px;
 }
 
-.footer-section {
+#lading_page .footer-section {
     width: 200px;
     margin: 10px 0;
 }
 
-.footer-section h3 {
+#lading_page .footer-section h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: #ffffff;
 }
 
-.footer-section p, .footer-section li {
+#lading_page .footer-section p, .footer-section li {
     font-size: 0.9em;
     line-height: 1.4;
     margin-bottom: 5px;
 }
 
-.footer-section ul {
+#lading_page .footer-section ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-section ul li {
+#lading_page .footer-section ul li {
     margin-bottom: 5px;
 }
 
-.footer-section ul li a {
+#lading_page .footer-section ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.footer-section ul li a:hover {
+#lading_page .footer-section ul li a:hover {
     text-decoration: underline;
 }
 
-.icon {
+#lading_page .icon {
     display: inline-block;
     margin-right: 8px;
     margin-bottom: 8px;
 }
 
-.icon svg {
+#lading_page .icon svg {
     width: 16px;
     height: 16px;
     fill: #ffffff;
 }
 
 /* Estilo para centralizar o copyright */
-.footer-copyright {
+#lading_page .footer-copyright {
     width: 100%;
     text-align: center;
     margin-top: 20px;
 }
 
-.footer p {
+#lading_page .footer p {
     margin: 0;
 }
 
-.footer h3 {
+#lading_page .footer h3 {
     color: #F7CFCA;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- parte do Cadastro---------------   */
+
+
+/* --------------- Definições basicas ---------------*/
+* #cadastro * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ---------------Corpo e fundo da página--------------- */
+body#cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(151,115,185);
+    background: linear-gradient(0deg, rgba(151,115,185,1) 0%, rgba(27,26,85,1) 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+#cadastro h1 {
+    margin-bottom: 20px;
+}
+
+/* --------------- parte do login ---------------   */
+#cadastro .caixa-principal {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda leve */
+    backdrop-filter: blur(20px); /* Efeito de desfoque para o "vidro" */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+
+#cadastro .caixa-principal h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+
+#cadastro .campo-entrada {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+
+#cadastro .campo-entrada input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    transition: border 0.3s ease;
+}
+
+#cadastro .campo-entrada input::placeholder {
+    color: #f0f0f0;
+}
+
+
+#cadastro .campo-entrada i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+
+
+#cadastro .campo-entrada input:focus {
+    border: 2px solid #1B1A55;
+}
+
+
+#cadastro .lembrar-esquecer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+#cadastro .lembrar-esquecer label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+#cadastro .lembrar-esquecer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#cadastro .lembrar-esquecer a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------Botão de login--------------- */
+#cadastro .botao {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#cadastro .botao:hover {
+    background-color: #f0f0f0;
+}
+
+/* ---------------Link de cadastro--------------- */
+#cadastro .link-cadastro {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cadastro .link-cadastro p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#cadastro .link-cadastro p a:hover {
+    text-decoration: underline;
+}
+
+/* --------------- imagem de perfil--------------- */
+#cadastro .avatar {
+    width: 100px;
+    height: 100px;
+    background-image: url(/assets/img/usuario.png); /* Substitua pelo caminho da imagem */
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    margin-top: 30px;
+}
+
+/* ---------------Transições suaves ---------------*/
+#cadastro button, input {
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- parte do login ---------------   */
+
+/* --------------- Definições basicas ---------------*/
+* #login * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ---------------Corpo e fundo da página--------------- */
+body#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(151,115,185);
+    background: linear-gradient(0deg, rgba(151,115,185,1) 0%, rgba(27,26,85,1) 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+#login h1 {
+    margin-bottom: 20px;
+}
+
+/* --------------- parte do login ---------------   */
+#login .caixa-principal {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda leve */
+    backdrop-filter: blur(20px); /* Efeito de desfoque para o "vidro" */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+
+#login .caixa-principal h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+
+#login .campo-entrada {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+
+#login .campo-entrada input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    transition: border 0.3s ease;
+}
+
+#login .campo-entrada input::placeholder {
+    color: #f0f0f0;
+}
+
+
+#login .campo-entrada i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+
+
+#login .campo-entrada input:focus {
+    border: 2px solid #1B1A55;
+}
+
+
+#login .lembrar-esquecer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+#login .lembrar-esquecer label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+#login .lembrar-esquecer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#login .lembrar-esquecer a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------Botão de login--------------- */
+#login .botao {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#login .botao:hover {
+    background-color: #f0f0f0;
+}
+
+/* ---------------Link de cadastro--------------- */
+#login .link-cadastro {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#login .link-cadastro p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#login .link-cadastro p a:hover {
+    text-decoration: underline;
+}
+
+/* --------------- imagem de perfil--------------- */
+#login .avatar {
+    width: 100px;
+    height: 100px;
+    background-image: url(/assets/img/usuario.png); /* Substitua pelo caminho da imagem */
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    margin-top: 30px;
+}
+
+/* ---------------Transições suaves ---------------*/
+#login button, input {
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- parte de serviços ---------------   */
+#servicos body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1B1A55;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+#servicos body::before, body::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: -1;
+}
+#servicos body::before {
+    background-color: #535C91;
+    top: -100px;
+    left: -100px;
+}
+#servicos body::after {
+    background-color: #9290C3;
+    bottom: -100px;
+    right: -100px;
+}
+#servicos .container {
+    max-width: 1400px;
+    width: 95%;
+    background-color: white;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#servicos h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    color: #333;
+    text-align: center;
+}
+#servicos h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+#servicos h2 {
+    font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+#servicos .subtitle {
+    font-size: 28px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 80%;
+    line-height: 1.6;
+}
+#servicos .services {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 40px;
+}
+#servicos .service {
+    background-color: #1B1A55;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border: 3px solid #1B1A55;
+}
+#servicos .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+#servicos .service-content {
+    flex: 1;
+    padding-left: 25px;
+    text-align: left;
+}
+#servicos .service h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+#servicos .service p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+#servicos .service img {
+    width: 45%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+#servicos .horizontal-service {
+    grid-column: 1;
+}
+#servicos .vertical-service {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+#servicos .vertical-service img {
+    width: 90%;
+    max-width: 280px;
+    margin-right: 0;
+    margin-bottom: 25px;
+}
+#servicos .vertical-service .service-content {
+    padding-left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#servicos .vertical-service p {
+    -webkit-line-clamp: unset;
+    max-height: none;
+    max-width: 80%;
+    margin: 0 auto;
+}
+#servicos .shape1, .shape2, .shape3, .shape4, .shape5 {
+    position: absolute;
+    z-index: -1;
+}
+#servicos .shape1 {
+    top: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    background-color: #535C91;
+    border-radius: 50% 50% 50% 0;
+}
+#servicos .shape2 {
+    bottom: -20px;
+    left: -20px;
+    width: 80px;
+    height: 80px;
+    background-color: #9290C3;
+    border-radius: 50% 50% 0 50%;
+}
+#servicos .shape3 {
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #1B1A55;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    opacity: 0.1;
+    transform: translate(-50%, -50%);
+}
+#servicos .shape4 {
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #D1B3E0;
+    border-radius: 50%;
+}
+#servicos .shape5 {
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #B08FC1;
+    border-radius: 50%;
+}
+#servicos .additional-services {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+#servicos .additional-service {
+    background-color: #535C91;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #1B1A55;
+}
+#servicos .additional-service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+#servicos .additional-service h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#servicos .additional-service p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+}
+#servicos .additional-service i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+#servicos .price {
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 15px;
+    color: white;
+}
+#servicos .highlighted {
+    background-color: #1B1A55;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+#servicos .old-price {
+    text-decoration: line-through;
+    color: #9290C3;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#servicos .discount-label {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#servicos .discount-label:hover {
+    background-color: #FF8787;
+}
+#servicos .discount-info {
+    display: none;
+    background-color: #FF6B6B;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
